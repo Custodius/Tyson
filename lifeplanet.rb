@@ -47,7 +47,7 @@ class Lifeplanet
       when 3..7 then "Temperate"
       when 8..11 then "Hot"
       when 12..13 then "Very Hot"
-      else then "Error"
+      else "Error"
     end
   end
 
