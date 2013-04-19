@@ -9,7 +9,7 @@ module Tyson
 
     def generate_planets
       @size.times do
-        $planets << generate_planet
+        planets << generate_planet
       end
     end
 
