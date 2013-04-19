@@ -49,7 +49,7 @@ puts " Other Bodies ".center(45, "*")
 
 
 
-for planet in planets do
+for planet in system.planets do
   puts "Orbital Position -  #{@orbit}"
   puts "\tType: #{planet.type}"
   puts "\tMoons: #{planet.moon}"
