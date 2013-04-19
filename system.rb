@@ -1,8 +1,9 @@
 module Tyson
   class System
+    attr_reader :planets 
     def initialize
       @size = rand(4..15)
-      $planets = []
+      @planets = []
       generate_planets
     end
 
