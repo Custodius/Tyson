@@ -56,17 +56,12 @@ class Lifeplanet
   end
 
   def size
-    case @size
-      when 0 .. 1
-        "Small"
-      when 2 .. 3
-        "Medium"
-      when 4 .. 8
-        "Earth Standard"
-      when 9 .. 11
-        "Large"
-      when 12 .. 13
-        "Very Large"
+    case @size 
+      when 0..1 then "Small"
+      when 2..3 then "Medium"
+      when 4..8 then "Earth Standard"
+      when 9..11 then "Large"
+      when 12..13 then "Very Large"
       else
         "Error"
     end
