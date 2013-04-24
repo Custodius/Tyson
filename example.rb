@@ -1,4 +1,5 @@
-require_relative("tyson")
+require_relative("lib/tyson")
+
 system = Tyson::System.new
 
 def planetnumber

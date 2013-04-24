@@ -12,10 +12,10 @@ system = gets.chomp
 Homework: Put all classes in this namespace format.  Tyson::System.new
 =end
 
-require_relative("star")
-require_relative("lifeplanet")
-require_relative("otherplanet")
-require_relative("system")
+require_relative("tyson/star")
+require_relative("tyson/lifeplanet")
+require_relative("tyson/otherplanet")
+require_relative("tyson/system")
 
 
 
@@ -26,7 +26,7 @@ clean this up so no duplication. Use case or hash, but refine the code.
 Make multiple planets - display multiple planets with iteration and not with manual code.
 
 
-[18] pry(main)> 
+[18] pry(main)>
 names =%w[Kurt james bob biff tannen]
 => ["Kurt", "james", "bob", "biff", "tannen"]
 
