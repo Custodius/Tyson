@@ -11,7 +11,7 @@ def banner(count = 10)
 end
 @orbit = 1
 star = Star.new
-lifeplanet = Lifeplanet.new
+lifeplanet = Tyson::Lifeplanet.new
 startup = rand(0..10)
 #print "What is the name of this star system? "
 puts " Star System ".center(45, "*")
