@@ -7,6 +7,7 @@ module Tyson
     GRAVITIES = ["Low (0.5 ES)", "Low (0.6 ES)", "Low (0.7 ES)", "Standard (0.8 ES)", "Standard (0.9 ES)", "Standard (1.0 ES)", "Standard (1.1 ES)", "High (1.2 ES)", "High (1.2 ES)", "High (1.3 ES)", "Very High (1.5 ES)", "Very High (1.7 ES)" , "Very High (2.0 ES)"]
 
     def initialize
+      super
       @atmopress = random
       @atmocomp = random
       @temperature = random
