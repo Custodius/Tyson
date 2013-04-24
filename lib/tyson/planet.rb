@@ -12,8 +12,8 @@ module Tyson
       when 4..8 then "Earth Standard"
       when 9..11 then "Large"
       when 12..13 then "Very Large"
-      else
-        "Error"
+      else  "Error"
+      end
     end
     
     def random(minimum = 0, maximum = 13)
