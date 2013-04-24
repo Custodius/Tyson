@@ -12,6 +12,7 @@ system = gets.chomp
 Homework: Put all classes in this namespace format.  Tyson::System.new
 =end
 
+require_relative("tyson/planet")
 require_relative("tyson/star")
 require_relative("tyson/lifeplanet")
 require_relative("tyson/otherplanet")
