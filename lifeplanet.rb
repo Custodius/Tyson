@@ -1,5 +1,5 @@
 module Tyson
-  class Lifeplanet
+  class Lifeplanet < Planet
     SURFACE_WATERS = [0, 5, 10, 20, 30, 40, 40, 50, 50, 60, 70, 80, 90, 100]
     LIFEFORMS = %w[Microbes Microbes Plants Plants Aquatic Aquatic Amphibians Amphibians Reptiles Reptiles Birds Birds Mammals Mammals]
 
@@ -7,14 +7,9 @@ module Tyson
     GRAVITIES = ["Low (0.5 ES)", "Low (0.6 ES)", "Low (0.7 ES)", "Standard (0.8 ES)", "Standard (0.9 ES)", "Standard (1.0 ES)", "Standard (1.1 ES)", "High (1.2 ES)", "High (1.2 ES)", "High (1.3 ES)", "Very High (1.5 ES)", "Very High (1.7 ES)" , "Very High (2.0 ES)"]
 
     def initialize
-      @size = random
       @atmopress = random
       @atmocomp = random
       @temperature = random
-    end
-  
-    def random(minimum = 0, maximum = 13)
-      rand(minimum..maximum)
     end
   
     def water
@@ -56,18 +51,6 @@ module Tyson
       LIFEFORMS.at(random)
     end
 
-    def size
-      case @size 
-        when 0..1 then "Small"
-        when 2..3 then "Medium"
-        when 4..8 then "Earth Standard"
-        when 9..11 then "Large"
-        when 12..13 then "Very Large"
-        else
-          "Error"
-      end
-    end
-
     def grav
       GRAVITIES.at(@size)
     end
@@ -81,4 +64,4 @@ module Tyson
       end
     end
   end
-end
+end  
