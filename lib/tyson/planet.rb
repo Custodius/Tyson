@@ -1,10 +1,10 @@
 module Tyson
   class Planet
-    attr_reader :size
+    attr_reader :distance
     def initialize 
       @size = random
     end
-    
+
     def size
       case @size 
       when 0..1 then "Small"
