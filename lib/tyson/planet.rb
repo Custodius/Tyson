@@ -3,6 +3,7 @@ module Tyson
     attr_reader :distance
     def initialize 
       @size = random
+      @distance = 5
     end
 
     def size
