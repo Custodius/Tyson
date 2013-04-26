@@ -41,3 +41,4 @@ end
 
 
 # orbit 1 - random variable - then each planet orbit thereafter takes the sum of previous orbits and adds it to itself with a range for the next orbital body. 
+# write a test for every defined function - it does not matter if the interior is blank, but weite a test format for each method. 
